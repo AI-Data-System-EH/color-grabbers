@@ -1,6 +1,7 @@
 # 도움말 페이지
 
 import streamlit as st
+
 from dataclass.colors import Colors
 from dataclass.game import GameConfiguration
 
@@ -28,15 +29,15 @@ def help():
             st.write(
                 f":gray[잡기에 실패하면 **{game_config.Penalty_Duration}분** 동안 아무도 잡을 수 없어요.]"
             )
-        st.write("ℹ️ QR 코드를 잃어버리면, 내 정보 페이지에서 QR 코드를 촬영할 수 있어요.")
+        st.write("ℹ️ 내 정보 페이지에서 QR 코드를 촬영할 수 있어요.")
 
     with st.expander("우승 조건"):
         st.write("✅ **마지막 한 팀**이 남은 경우")
         st.write("✅ 제한시간까지 생존한 색깔 중 **가장 큰 그룹**을 가진 색깔이 우승")
         st.write("ℹ️ 남은 색깔의 그룹 크기가 동일하면 남은 색깔팀 수만큼 전체 상금 분배")
-        with st.chat_message(name="assistant", avatar="resources/chloe.webp"):
-            st.write(f":gray[제한시간은 **{game_config.end_time_str()}**까지입니다.]")
-            st.write(f":gray[현재 남은시간은 **{game_config.remaining_time(dtype='str')}**입니다.]")
+        # with st.chat_message(name="assistant", avatar="resources/chloe.webp"):
+        #     st.write(f":gray[제한시간은 **{game_config.end_time_str()}**까지입니다.]")
+        #     st.write(f":gray[현재 남은시간은 **{game_config.remaining_time(dtype='str')}**입니다.]")
 
     with st.expander("상금 분배"):
         st.write("✅ 팀원 전원 생존 시: 상금을 균등 분배")

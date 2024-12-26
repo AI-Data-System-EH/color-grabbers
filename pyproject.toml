@@ -1,3 +1,5 @@
+#:schema https://json.schemastore.org/pyproject
+
 [tool.poetry]
 authors     = [ "Ruzzy77 <hiyaq77@gmail.com>" ]
 description = ""
