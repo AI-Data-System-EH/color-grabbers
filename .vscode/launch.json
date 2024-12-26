@@ -9,8 +9,7 @@
             "type": "debugpy",
             "request": "launch",
             "module": "streamlit",
-            "cwd": "${workspaceFolder}/app",
-            "args": ["run", "app.py", "--server.port", "8501"],
+            "args": ["run", "app.py"],
             "console": "integratedTerminal",
             "autoStartBrowser": false
         },
