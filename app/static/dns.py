@@ -1,0 +1,5 @@
+# DNS 설정
+
+PUBLIC_URL = "localhost"
+PUBLIC_PORT = 8501
+PUBLIC_API_PORT = 8000

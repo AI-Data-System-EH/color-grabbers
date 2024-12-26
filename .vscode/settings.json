@@ -1,0 +1,22 @@
+{
+    "cSpell.enabledFileTypes": {
+        "markdown": true,
+        "python": true,
+        "ignore": false,
+        "yaml": false
+    },
+    "cSpell.words": [
+        "capturable",
+        "dropna",
+        "idxmax",
+        "iloc",
+        "isna",
+        "iterrows",
+        "pyshorteners",
+        "qrcode",
+        "stauth",
+        "timestamptz",
+        "uvicorn",
+        "weet"
+    ]
+}

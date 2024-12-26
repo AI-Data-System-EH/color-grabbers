@@ -1,0 +1,113 @@
+cookie:
+  expiry_days: 30
+  key: signature_key_for_color_grabbers_st_auth_cookie
+  name: color-grabbers_st_auth_cookie
+credentials:
+  usernames:
+    admin:
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$qdQV7egLJL91uDI0Zkxvtew/b1ZKbqYhk/bcFLtVVu/Opy.u41BoG
+      roles:
+      - admin
+      - editor
+      - viewer
+    test:
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$N0XAFRmGbu3h5f/25kWk/uuJEkZumCluo9oSIdG2PzDnciJrzY4Ii
+    user:
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$TGeh8cEefgXw0sKODzuEC.55QMNlqilHIum3Jq7TH4J6D.ImLTGuq
+    "\uAD6C\uC22D\uBAA8":
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$o6.AS4w4aAQdI6QK8OEa5OeAfahgJLgJ2Ahsz85T/3/i1/LbJyjVS
+      roles: []
+    "\uAE40\uB098\uC5F0":
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$OvhGDrGI0/tmgWGOnQ6LneNVRUBmGYAKH7WyzTK5pkUHsMat.GnwC
+      roles: []
+    "\uAE40\uB3C4\uD604":
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$pyBU5ztinP4159jnWZgsiOCpwnQTw8lcbG2sZ5XVkKbE5bzi0K8l6
+      roles: []
+    "\uAE40\uC2B9\uD658":
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$1jSE1ypZoII0gNjrclPY7elSytJg.wvAtQAOUXstQmTW.o8aGNj9q
+      roles: []
+    "\uAE40\uC900\uAD8C":
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$YjmcgWQxXCEUOmcQyiZthODzA6UZUtMlqqvFWa4NYMO6j/6jJt8w2
+      roles: []
+    "\uBB38\uC11C\uD76C":
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$q5tXx3m8RhM/cEDAZ7IPu.O3mUsUObVSALFeyHtZrBkqv9M0VtpDK
+      roles: []
+    "\uBC15\uC900\uC601":
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$dNccV9oxAS4MVPKNlaJuZOSeivein.NpVuWb7ao42UCOJ2RX7Z.8m
+      roles: []
+    "\uBC30\uC18C\uC601":
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$lLhAxlXIowUsT99vrU/uN.TQDxY9O4qnhy2DTc3KVbWarPM.oc8ga
+      roles: []
+    "\uBCC0\uD638\uBBFC":
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$YVOl.A5D4So6SdEO3tNpgen3DTaGAAjchlAIkAXF4HaTGRHgQ.MCa
+      roles: []
+    "\uC548\uC2B9\uCC2C":
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$3ml82U8JUmai1ZAGCmc9..JX0yjbVycSkQaS.Q6PA/n8V9VlM/xxK
+      roles: []
+    "\uC774\uD604\uC900":
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$bhDeCG4mC1pmvVBdScEnMeKW12xQN0HADVivLOg/qMvYmhYz27N0y
+      roles: []
+    "\uD5C8\uC608\uCC2C":
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$y8qg8akQfm97/xLSOmYjSe8JNcJa23O7XHbalBHH9W1KqrvzY9gyC
+      roles: []
+    "\uD615\uC131\uC900":
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$XaFyLVXGy1cdktA1TpZCHeRIzvKeg3MKEqKpoQoMpbk22qad/GyMu
+      roles: []
+    "\uD669\uC7AC\uBA85":
+      email: null
+      first_name: null
+      last_name: null
+      password: $2b$12$aOTSPurMYXpvabH.of7OHeAZB3jpSfMrrDf9XHrMX63U.BXkQ8GLC
+      roles: []
+pre-authorized:
+  emails:
+  - admin@gmail.com
+  - user@gmail.com

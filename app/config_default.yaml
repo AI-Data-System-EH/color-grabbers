@@ -1,0 +1,31 @@
+cookie:
+  expiry_days: 30
+  key: signature_key_for_color_grabbers_st_auth_cookie
+  name: color-grabbers_st_auth_cookie
+credentials:
+  usernames:
+    admin:
+      password: admin # Will be hashed automatically
+      email:
+      first_name:
+      last_name:
+      # failed_login_attempts: 0 # Will be managed automatically
+      # logged_in: False # Will be managed automatically
+      roles: # Optional
+        - admin
+        - editor
+        - viewer
+    user:
+      password: user # Will be hashed automatically
+      email:
+      first_name:
+      last_name:
+    test:
+      password: test # Will be hashed automatically
+      email:
+      first_name:
+      last_name:
+pre-authorized: # Optional
+  emails:
+    - admin@gmail.com
+    - user@gmail.com
