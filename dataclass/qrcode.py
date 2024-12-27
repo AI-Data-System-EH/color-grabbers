@@ -3,7 +3,6 @@ from enum import Enum
 
 import qrcode
 from PIL import Image
-from pyshorteners import Shortener
 
 from static.dns import PUBLIC_URL
 
@@ -36,7 +35,7 @@ class QRCode:
         base_url = f"{PUBLIC_URL}"
         qr_code_data = f"{base_url}/{query_params}"
 
-        qr_code_data = Shortener().tinyurl.short(qr_code_data)
+        # qr_code_data = Shortener().tinyurl.short(qr_code_data)
         qr_image = QRCode.generate_qrcode(qr_code_data)
 
         return qr_image, qr_code_data
