@@ -15,7 +15,7 @@ def my_info():
 
     # QR 코드 조회
     qr_image, qr_code_data = QRCode.qrcode_with_capture_param(name)
-    st.image(qr_image, use_container_width=True, caption=qr_code_data)
+    st.image(qr_image, use_container_width=True)
 
 
 my_info()
