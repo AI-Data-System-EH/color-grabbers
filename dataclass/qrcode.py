@@ -4,6 +4,7 @@ from enum import Enum
 import qrcode
 from PIL import Image
 from pyshorteners import Shortener
+
 from static.dns import PUBLIC_PORT, PUBLIC_URL
 
 
@@ -24,10 +25,16 @@ class QRCode:
         return pil_image
 
     @staticmethod
-    def qrcode_with_capture_param(name: str, no_penalty: bool = False) -> tuple[Image.Image, str]:
+    def qrcode_with_capture_param(
+        name: str, no_penalty: bool = False
+    ) -> tuple[Image.Image, str]:
         quote_name = name.replace(" ", "_")
         quote_name = urllib.parse.quote(quote_name)
-        qr_code_data = f"http://{PUBLIC_URL}:{PUBLIC_PORT}/?capture={quote_name}&no_penalty={str(no_penalty).lower()}"
+        query_params = f"?capture={quote_name}&no_penalty={str(no_penalty).lower()}"
+
+        base_url = f"{PUBLIC_URL}:{PUBLIC_PORT}"
+        qr_code_data = f"{base_url}/{query_params}"
+
         qr_code_data = Shortener().tinyurl.short(qr_code_data)
         qr_image = QRCode.generate_qrcode(qr_code_data)
 

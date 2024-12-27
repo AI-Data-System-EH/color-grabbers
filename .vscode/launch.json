@@ -10,8 +10,7 @@
             "request": "launch",
             "module": "streamlit",
             "args": ["run", "app.py"],
-            "console": "integratedTerminal",
-            "autoStartBrowser": false
+            "console": "integratedTerminal"
         },
         {
             "name": "Python Debugger: Current File",

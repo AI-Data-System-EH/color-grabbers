@@ -16,6 +16,7 @@
         "qrcode",
         "stauth",
         "timestamptz",
+        "TOTP",
         "uvicorn",
         "weet"
     ]
