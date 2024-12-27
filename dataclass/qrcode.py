@@ -5,7 +5,7 @@ import qrcode
 from PIL import Image
 from pyshorteners import Shortener
 
-from static.dns import PUBLIC_PORT, PUBLIC_URL
+from static.dns import PUBLIC_URL
 
 
 class QRCode:
@@ -32,7 +32,8 @@ class QRCode:
         quote_name = urllib.parse.quote(quote_name)
         query_params = f"?capture={quote_name}&no_penalty={str(no_penalty).lower()}"
 
-        base_url = f"{PUBLIC_URL}:{PUBLIC_PORT}"
+        # base_url = f"{PUBLIC_URL}:{PUBLIC_PORT}"
+        base_url = f"{PUBLIC_URL}"
         qr_code_data = f"{base_url}/{query_params}"
 
         qr_code_data = Shortener().tinyurl.short(qr_code_data)
