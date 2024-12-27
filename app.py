@@ -4,13 +4,14 @@ from datetime import datetime
 import streamlit as st
 import streamlit_authenticator as stauth
 import yaml
+from streamlit_theme import st_theme
+from yaml.loader import SafeLoader
+
 from dataclass.action import Action
 from dataclass.colors import Colors
 from dataclass.game import GameConfiguration, GamePlayerStatus
 from dataclass.qrcode import QRCodeStatus
 from dataclass.supabase import Supabase
-from streamlit_theme import st_theme
-from yaml.loader import SafeLoader
 
 
 # 사이드바
@@ -76,7 +77,11 @@ def sidebar():
 
     st.sidebar.divider()
 
-    if user_list is not None and not user_list.empty and username in user_list["name"].values:
+    if (
+        user_list is not None
+        and not user_list.empty
+        and username in user_list["name"].values
+    ):
         with st.sidebar.status("내 색깔 확인"):
             login_user = st.session_state["login_user"]
 
@@ -95,7 +100,9 @@ def sidebar():
                     st.write("참여상태")
                 with col2:
                     status = GamePlayerStatus(login_user["status"])
-                    st.write(f":{status.get_status_color(status.value)}[{status.value}]")
+                    st.write(
+                        f":{status.get_status_color(status.value)}[{status.value}]"
+                    )
 
                 # QR 코드 상태
                 with col1:
@@ -153,7 +160,9 @@ def sidebar():
                     penalty_time = login_user["penalty_time"]  # str
                     if penalty_time is not None:
                         penalty_time = penalty_time.split(".")[0]
-                        penalty_time = datetime.strptime(penalty_time, "%Y-%m-%dT%H:%M:%S")
+                        penalty_time = datetime.strptime(
+                            penalty_time, "%Y-%m-%dT%H:%M:%S"
+                        )
                         penalty_time = penalty_time.strftime("%Y-%m-%d %H:%M")
                         st.write(f"{penalty_time}")
                     else:
@@ -194,6 +203,8 @@ if __name__ == "__main__":
 
     # endregion
 
+    sidebar()
+
     # region 페이지 설정
 
     pages_dict = {
@@ -206,13 +217,13 @@ if __name__ == "__main__":
         ],
     }
     if "admin" in (st.session_state.get("roles") or []):
-        pages_dict["PO￦ER"].append(st.Page(page="view/admin.py", title="관리자", icon="👑"))
+        pages_dict["PO￦ER"].append(
+            st.Page(page="view/admin.py", title="관리자", icon="👑")
+        )
 
     pages = st.navigation(pages_dict)
 
     # endregion
-
-    sidebar()
 
     # region 쿼리 파라미터 처리
 

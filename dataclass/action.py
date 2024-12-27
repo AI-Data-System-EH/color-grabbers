@@ -111,7 +111,7 @@ class Action:
                 }
             ).execute()
 
-            if no_penalty or penalty_time is None:
+            if no_penalty:# or penalty_time is None:
                 st.toast("이번은 패널티가 없어요. 다음번에는 패널티가 적용될 거예요.")
                 # 시도한 사람의 무료시도 QR 링크 가리기
                 supabase._supabase_service_role.table("participants").update(
